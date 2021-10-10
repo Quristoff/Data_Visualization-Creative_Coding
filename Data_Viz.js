@@ -181,13 +181,13 @@ function draw() {
     textAlign(RIGHT);
     text("0.05 mg/kg\nby\nregulation",537*0.67,height2);
 
-    title = "Cadium Concentration of Green Onion"
+    title = "Cadmium Concentration of Green Onion"
   }
 
   // soil concentration
   if (mouseX > width/2 && mouseX <= 3*width/4) {
     counter = 4
-    title = "Cadium Concentration in Soil";
+    title = "Cadmium Concentration in Soil";
     rectMode (CENTER);
     fill (0,0,0);
     rect (width/2,height/2,width,height);
