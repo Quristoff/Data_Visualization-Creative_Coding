@@ -1,6 +1,9 @@
 
 
-// create a fade in effet
+// create a fade in effet  
+// THIS IS EVETUALLY NOT USED IN THIS ASSIGNMENT 
+// BUT THIS IS A COOL FUNCTION 
+// I WILL USE IT IN MY MIDTERM 
 var i = 0;
 function fadeInEllipse() {
 
@@ -66,7 +69,7 @@ function preload() {
   noise = loadSound("noise.mp3")
   bgm = loadSound("Angle.mp3")
 
-
+var firstLoop = true
 
 }
 
@@ -84,7 +87,7 @@ function setup() {
 
 //draw
 function draw() {
-  if (bgm.isPaused()){
+  if (firstLoop){
     bgm.play();
   }
 
@@ -283,6 +286,8 @@ function draw() {
   textFont("Times New Roman")
   text(quote[counter],width/2,height/2,width/2.5,height/5.4);
   text(source[counter],width/2+100,height/2+40)
+  
+  firstLoop = False
 
 
 
