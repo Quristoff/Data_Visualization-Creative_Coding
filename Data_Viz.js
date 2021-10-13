@@ -69,7 +69,7 @@ function preload() {
   noise = loadSound("noise.mp3")
   bgm = loadSound("Angle.mp3")
 
-var firstLoop = true
+
 
 }
 
@@ -83,11 +83,11 @@ function setup() {
 
 }
 
-
+var firstLoop = true
 
 //draw
 function draw() {
-  if (firstLoop){
+  if (firstLoop == true){
     bgm.play();
   }
 
