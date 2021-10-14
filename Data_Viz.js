@@ -1,9 +1,6 @@
 
 
-// create a fade in effet  
-// THIS IS EVETUALLY NOT USED IN THIS ASSIGNMENT 
-// BUT THIS IS A COOL FUNCTION 
-// I WILL USE IT IN MY MIDTERM 
+// create a fade in effet
 var i = 0;
 function fadeInEllipse() {
 
@@ -83,11 +80,11 @@ function setup() {
 
 }
 
-var firstLoop = true
 
+var firstLoop = true
 //draw
 function draw() {
-  if (firstLoop == true){
+  if (firstLoop){
     bgm.play();
   }
 
@@ -184,13 +181,13 @@ function draw() {
     textAlign(RIGHT);
     text("0.05 mg/kg\nby\nregulation",537*0.67,height2);
 
-    title = "Cadmium Concentration of Green Onion"
+    title = "Cadium Concentration of Green Onion"
   }
 
   // soil concentration
   if (mouseX > width/2 && mouseX <= 3*width/4) {
     counter = 4
-    title = "Cadmium Concentration in Soil";
+    title = "Cadium Concentration in Soil";
     rectMode (CENTER);
     fill (0,0,0);
     rect (width/2,height/2,width,height);
@@ -286,9 +283,8 @@ function draw() {
   textFont("Times New Roman")
   text(quote[counter],width/2,height/2,width/2.5,height/5.4);
   text(source[counter],width/2+100,height/2+40)
-  
-  firstLoop = False
 
+  firstLoop = false;
 
 
 }
